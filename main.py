@@ -71,8 +71,7 @@ def search_in_mass_secrets(countdown):
     percentage_list = []
 
     while countdown != letter_count:
-        short = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z'
-        short = short.split(',')
+        short = list('a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,)
         random_letter = secrets.choice(short)
         letter_list.append(random_letter)
         countdown += 1
